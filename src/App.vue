@@ -1,17 +1,37 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld/>
+    <SearchBar/>
+    <word-full-card v-show="chosedCard"/>
+    <words-panel/>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import SearchBar from './components/SearchBar.vue'
+import WordFullCard from './components/WordFullCard.vue'
+import WordsPanel from './components/WordsPanel.vue'
+
+import { mapGetters } from 'vuex'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    SearchBar,
+    WordsPanel,
+    WordFullCard
+  },
+  methods: {
+    ...mapGetters([
+      'getChosedCard'
+    ])
+  },
+  computed: {
+    chosedCard() {
+      return this.$store.getters.getChosedCard !== 0 ? true : false
+    }
   }
 }
 </script>

@@ -1,0 +1,31 @@
+{
+  "words": [
+    {
+      "en": "jester",
+      "ru": "example ru",
+      "id": 828348,
+      "translations": "шут",
+      "examples_en": "I have sat in the halls of kings, above the salt and below the salt, been fool and jester, man-at-arms, clerk and monk;",
+      "forgets": {
+        "count": "0",
+        "dates": []
+      },
+      "forgets_count": "0",
+      "forgets_dates": []
+
+    },
+    {
+      "en": "serf",
+      "ru": "example ru",
+      "id": 317803,
+      "translations": "Крепостной, раб",
+      "examples_en": "I have worn the iron collar of the serf about my neck in cold climes;",
+      "forgets": {
+        "count": "0",
+        "dates": []
+      },
+      "forgets_count": "0",
+      "forgets_dates": []
+    }
+  ]
+}
