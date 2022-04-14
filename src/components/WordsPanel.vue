@@ -19,12 +19,12 @@ export default {
     },
     computed: {
         words() { 
-            return this.$store.state.filtered_words
+            return this.$store.state.words.filtered_words
         },
     },
     methods: {
         checkState() {
-            console.log(this.$store.getters.getWords)
+            console.log(this.$store)
         },
         getConsoleWords() {
             //this.words = this.$store.getters.getWords

@@ -32,6 +32,9 @@ export default {
     chosedCard() {
       return this.$store.getters.getChosedCard !== 0 ? true : false
     }
+  },
+  mounted() {
+    this.$store.dispatch('loadWords')
   }
 }
 </script>

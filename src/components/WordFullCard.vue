@@ -31,6 +31,7 @@ export default {
         word: {
             get() {
                 let response = this.$store.getters.getSelectedWord
+                console.log(response)
                 return response === undefined ? 0 : response
             },
             set(value){
